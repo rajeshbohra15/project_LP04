@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #f6f8fa;
+}
+.container{
+    max-width: 1240px;
+    margin: auto;
+}
+h1{
+    font-size: 55px;
+    line-height: 1.2;
+}
+h2{
+    font-size: 45px;
+    line-height: 1.2;
+}
+p{
+    line-height: 25px;
+}
+main{
+    background-image: url('./images/mainBackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+    z-index: -1;
+}
+main:before {
+    content: '';
+    background-color: rgba(0,0,0,0.35);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.navbar ul,
+.navbar img{
+    z-index: 1;
+}
+.navbar img{
+    padding-left: 50px;
+}
+.navbar ul li{
+    display: inline-block;
+    padding-right: 50px;
+    z-index: 9999;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #b0b3bb;
+    font-size: 16px;
+}
+.border{
+    border-bottom: 1px solid white;
+}
+.btn{
+    padding: 15px 30px;
+    border-radius: 25px;
+    border: 0;
+    font-size: 16px;
+    line-height: 15px;
+    cursor: pointer;
+    border: 2px solid #6663e9;
+}
+.primary-btn{
+    background-color: #6663e9;
+    color: #fff;
+}
+.primary-btn:hover{
+    background-color: transparent;
+    border: 2px solid #6663e9;
+}
+
+.banner .banner-wrapper{
+    display: flex;
+    align-items: center;
+    padding: 200px 50px;
+}
+.banner .column-1{
+    width: 50%;
+}
+.banner .column-1 h1{
+    color:#fff;
+    padding-bottom: 30px;
+}
+.banner .column-1 p{
+    color: #797e7c;
+    padding-bottom: 30px;
+}
+.logo-grid{
+    background-color: #fff;
+    margin-top: -75px;
+    border-radius: 30px;
+}
+.logo-grid img {
+    padding: 45px;
+}
+.estate-grid .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.estate-grid .row .card {
+    width: 32%;
+}
+.estate-grid .row .card img{
+    width: 100%;
+    border-radius: 30px;
+}
+.estate-grid h2{
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+.estate-grid .row .card .card-content {
+    background-color: #563939;
+    border-radius: 30px;
+    margin-top: -98px;
+}
+.left-img-right-content{
+    padding: 100px 0;
+}
+.left-img-right-content .box{
+    width: 50%;
+}
+.left-img-right-content .box img{
+    width: 500px;
+    border-radius: 30px;
+}
+.left-img-right-content .content{
+    display: flex;
+    align-items: center;
+}
+.left-img-right-content h2,
+.left-img-right-content p{
+    padding-bottom: 20px;                                
+}

@@ -80,6 +80,15 @@ main:before {
     background-color: transparent;
     border: 2px solid #6663e9;
 }
+.secondary-btn{
+    background-color: #fff;
+    color: #918fef;
+}
+.secondary-btn:hover{
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #918fef;
+}
 
 .banner .banner-wrapper{
     display: flex;
@@ -145,4 +154,35 @@ main:before {
 .left-img-right-content h2,
 .left-img-right-content p{
     padding-bottom: 20px;                                
+}
+.call-to-action .row{
+    background-color: #6663e9;
+    padding: 40px;
+    border-radius: 50px;
+}
+.call-to-action .content-wrap{
+    width: 55%;
+    margin: auto;
+    text-align: center;
+}
+.call-to-action .content-wrap h2,
+.call-to-action .content-wrap p{
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.call-to-action .content-wrap p{
+    padding-left: 65px;
+    padding-right: 65px;
+}
+input[type="text"] {
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: 0;
+    background-color: #5654d1;
+    color: #fff;
+    display: inline-block;
+}
+input[type="text"]:focus{
+    outline: 0;
 }

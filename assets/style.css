@@ -22,20 +22,30 @@ h2{
 p{
     line-height: 25px;
 }
-main{
+/* .main{
     background-image: url('./images/mainBackground.png');
     background-repeat: no-repeat;
     background-size: cover;
     position:relative;
-    z-index: -1;
+    
+} */
+.main{
+    background-image: url('./images/mainBackground.png');
+    background-repeat: no-repeat;
+    min-height:700px;
+    background-size: cover;
+    position: relative;
 }
-main:before {
+.main:before{
     content: '';
-    background-color: rgba(0,0,0,0.35);
-    height: 100%;
-    width: 100%;
     position: absolute;
-    z-index: -1;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.main *{
+    z-index: 1;
 }
 .navbar{
     display: flex;
@@ -185,4 +195,27 @@ input[type="text"] {
 }
 input[type="text"]:focus{
     outline: 0;
+}
+footer{
+    padding: 100px 0px;
+}
+footer .content-row{
+    display: flex;
+    padding: 0 50px;
+    justify-content: space-between; 
+}
+
+footer .content-row .box {
+    width: 20%;
+}
+
+footer .content-row .box h3{
+    padding-bottom: 25px;
+}
+footer .content-row .box ul li{
+    list-style: none;
+    padding-bottom: 20px;
+}
+footer .content-row .box.box-1 {
+    margin-right: 200px;
 }
